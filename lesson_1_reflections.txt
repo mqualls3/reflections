@@ -1,0 +1,30 @@
+1. How did viewing a diff between two versions of a file help you see the bug that was introduced?
+
+The diff command only shows the lines that differ between the two files.
+This is far easier than scanning through the entire file trying to find
+the changes. 
+
+2. How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
+
+By having access to previous versions of a file you are working with, you can
+easily see what changes you have made. You can also revert to a previous version
+of a file if something is messed up or corrupted. This can save countless hours of 
+repeat work.
+
+3. What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google docs does?
+
+You can reduce the amounts of commits created if you do it manually as opposed to having a commit
+automatically happen. You can decide when and why a commit should happen, as well as leave comments
+on why you made the commit. The downside to doing it manually is that you might forget to commit a change, and this could lead to confusion. 
+
+4. Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
+
+Sometimes, multiple files need to be saved and tracked together. It's much easier to save all of the files in the repository together as oppoesed to doing it separately.
+
+5. How can you use the commands git log and git diff to view the history of files?
+
+When you use git log, you pull up all of the commits that have been made. You can then find the files you would lke to compare, use git diff file_one file_two, and this will bring up all of the changes that were made.
+
+6. How might using version control make you more confident to make changes that could break something?
+
+Using version control, you can make more changes without worrying too much about corrupting your file, since you can just revert to an older, not broken version.
