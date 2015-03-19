@@ -5,3 +5,23 @@ Initializing a repository gives you the ability to make commits.
 2. How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 You use the staging area to add mutliple files to your commit. The working directory is where the files are originally. Once you commit the files, they are added to the repository.
+
+3. How can you use the staging area to make sure you have one commit per logical change?
+
+You can compare the files in the staging area to either the files in the working directory or the most recent commit. You use git diff to compare with the working directory or use git diff --staged to compare to the most recent commit. This way, you can see what changes have been made and decide if it makes sense to commit the files in the staging area.
+
+4.What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+You might make a new branch if you wanted to experiment with some new features, but you didn't want it to override the main file. If anything were to go wrong, you could just use git checkout to switch back to the other version.
+
+5. How do the diagrams help you visualize the branch structure?
+
+It helps to visualize what commits can be accessed by your current state
+
+6. What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merging two branches together will merge all of the commits made in each individual branch into one branch. 
+
+7. What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+A pro of auto merging is that it might eliminate repetitive work. A con would be that in some instances, Git might merge two files when some changes need to be made first. This could cause some strange running behavior of your program
